@@ -1,0 +1,61 @@
+.navbar.dark{
+    background: var(--dark-primary);
+}
+
+.toggle-btn.dark{
+    background: var(--toggle-dark-bg);
+}
+
+.btn.dark{
+    color: var(--color-text-pale);
+}
+
+.wrapper.dark{
+    background: var(--dark-primary);
+}
+
+#download-btn.dark{
+    background: var(--toggle-dark-bg);
+}
+
+#download-btn.dark:hover{
+    background: var(--toggle-dark-bg-pale);
+}
+
+.main-title-dark.dark{
+    color: var(--hi-dark);
+}
+
+#first-name.dark{
+    color: var(--color-text-pale);
+}
+
+#hi.dark{
+    color:var(--hi-dark);
+}
+
+.social-link.dark{
+    color: var(--hi-dark);
+}
+
+.social-link.dark:hover{
+    color: var(--hi-dark-pale);
+}
+
+
+
+.card.dark{
+    background: var(--box-shadow-color-dark);
+}
+
+.service-title.dark{
+    color: var(--color-secondary);
+}
+
+.services-content.dark{
+    background: var(--box-shadow-color-dark);
+}
+
+.certifications-content.dark{
+    background: var(--box-shadow-color-dark);
+}

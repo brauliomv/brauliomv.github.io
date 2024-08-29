@@ -1,0 +1,410 @@
+@import url('/assets/css/keyframes.css');
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+hr{
+    border: solid 0.1em var(--color-text-gray);
+    opacity: 10%;
+}
+.main, .row, #greeting, .main-title-dark, #about-description, #portrait, .social, .service,.contact, .footer{
+    display: flex;
+    justify-content: center;
+}
+
+.main-title-dark{
+    transition: 0.5s;
+}
+
+.wrapper{
+    transition: 0.5s;
+    padding-bottom: 6em;
+}
+
+
+#scroll-top{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.content{
+    margin: 0em 3em 0em 3em;
+    padding-top: 6em;
+    
+}
+
+
+.main, .about, .experience, .projects, .services, .contact{
+    animation: fade-down 0.5s; 
+}
+
+.col{
+    align-items: center;
+    margin: 0;
+}
+
+#greeting{
+    text-align: center;
+    line-height: 1;  
+    flex-direction: column;
+}
+
+#hi{
+    font-size: calc(1.2rem + 6vw);
+    font-weight: 800;
+    color: var(--color-primary);
+    transition: 0.5s;
+}
+
+#name{
+    font-size: calc(1.2rem + 4vw);
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+
+#download-cv{
+    margin: 3em 0em 0em 0em;
+}
+
+#download-btn{
+    background: var(--color-primary);
+    color: var(--color-background);
+    /* font-size: 1.5em; */
+    font-size: calc(0.8rem + 0.5vw);
+    padding: 0.7em;
+    border-radius: 1.4em;
+    transition: 0.5s;
+}
+
+#download-btn:hover{
+    background: var(--color-primary-pale);
+}
+.col, .illustration{
+    width: 90%;
+    margin: 0;
+}
+
+.illustration img{
+    padding: 0;
+    max-width:100%;
+    height:auto;
+    display: block;
+    /* transform: scaleY(1.09);  */
+  }
+
+.about{
+    margin-top: 6em;
+}
+
+.experience, .projects, .services{
+    margin-top: 8em;
+}
+
+
+
+  #about-content, #experience-content, #projects-content, #services-content{
+    margin: 4em 5em 0em 5em;
+    
+  }
+
+
+  .main-title-dark{
+    /* font-size: 5em; */
+    font-size: calc(1.2rem + 4.5vw);
+    font-weight: 800;
+    color: var(--color-primary);
+    transition: 0.5s;
+  }
+
+  #about-description{
+    font-size: calc(1rem + 1vw);
+    color: var(--color-text-gray);
+    line-height: 1.3;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  #portrait img{
+    max-width:85%;
+    height: auto;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    box-shadow:0px 3px 10px -0.2px var(--color-secondary);
+    background: var(--rgb-color1);
+    background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-primary-pale) 100%);
+    display: block;
+    background-size: 300% 300%;
+    animation: animatedbg 10s infinite alternate;
+  }
+
+.social{
+    width: 50%;
+}
+  
+.social ul li{
+    list-style-type: none;  
+}
+
+.social-link{
+    color: var(--color-primary);
+    font-size: 3.5rem;
+    transition: 0.4s;
+}
+
+.social-link:hover{
+    color: var(--color-primary-pale);
+}
+
+.company{
+    /* font-size: 2em; */
+    
+   font-size: calc(1.6rem + 0.1vw);
+}
+
+.period{
+    font-size: calc(1rem + 0.1vw);
+}
+
+.card{
+    margin:2em;
+    box-shadow: var(--box-shadow-color);
+    padding: 1em;
+    border-radius: 0.8em;
+    transition: 0.5s;
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    color: var(--color-secondary); 
+    margin-bottom: 1em;
+}
+
+#current{
+    background: var(--color-secondary-pale);
+    padding: 1em;
+    border-radius: 0.8em;
+}
+.position{
+    margin: 1em 0em 1em 0em;
+    /* font-size: 1.4em; */
+    font-size: calc(1.4rem + 0.1vw);
+    font-weight: bold;
+}
+
+.duties{
+    /* font-size: 1.2em; */
+    font-size: calc(1.1rem + 0.1vw);
+    margin: 0em 0em 1em 0em;
+}
+
+.duties ul li, .skills ul li{
+    list-style-type: none;
+}
+
+.skills{
+    /* font-size: 1em; */
+    font-size: calc(0.9rem + 0.1vw);
+    margin: 1em 0em 0em 0em;
+    font-weight: bold;
+}
+
+.skill{
+    display: inline;
+    background: var(--color-text-pale);
+    padding: 0.3em;
+    border-radius: 0.8em;
+    line-height: 2.5em;
+}
+.card-text{
+    color: var(--color-text-gray);
+}
+
+.project{
+    width: 50%;
+}
+
+.swiper img{
+    width:100%;
+    height:auto;
+    display:block;
+    margin: 0;
+}
+
+/* services */
+.services-content{
+    background: var(--color-secondary-pale);
+    border-radius: 0.8em;
+    transition: 0.5s;
+}
+
+.certifications-content{
+    background: var(--color-primary-variation);
+    border-radius: 0.8em;
+    transition: 0.5s;
+}
+.service{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1em;
+    max-width:30%;
+    border-radius: 0.8em;    
+}
+.service-item{
+    margin: 1em 0em 1em 0em;
+}
+
+.service-title{
+    font-size: calc(2rem + 0.1vw);
+    font-weight: bold;
+    color: var(--color-primary-pale);
+    transition: 0.5s;
+}
+
+.service-description{
+    font-size: calc(1.2rem + 0.1vw);
+    margin: 1em;
+    color: var(--color-text-gray);
+}
+
+.service-image img{
+    width:15em;
+    max-width:100%;
+    height:auto;
+    border-radius:50%;
+}
+
+
+/* certifications */
+.certification-image img{
+    height: auto;
+    max-width: 100%;
+    
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.contact{
+
+    margin: 4em 5em 4em 5em;
+    text-align: center;
+}
+
+.contact-title{
+    /* font-size: 2em; */
+    font-size: calc(2rem + 1vw);
+    font-weight: bold;
+    /* color: var(--color-primary-pale); */
+}
+.contact-items{
+    margin: 1em;
+    /* font-size: 1.2em; */
+    font-size: calc(1.2rem + 0.1vw);
+    color: var(--color-text-gray);
+}
+
+.contact-items a{
+    color: var(--color-text-gray);
+}
+
+#scroll-top{
+    width: 1.5em;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.footer{
+    box-shadow:0px 2px 8px -0.1px var(--color-secondary);
+    background: var(--dark-primary);
+    align-items: center;
+    color: var(--color-background);
+    height: 4em;
+    font-size: calc(0.8rem + 0.1vw);
+}
+
+
+@media(max-width:900px){
+
+    .wrapper{
+        padding-top: 6em;
+    }
+
+    .content{
+        margin: 0em 1.5em 0em 1.5em;
+    }
+    
+    #hand{
+        height: 40px;
+        width: 40px;
+    }
+    
+    .row{
+        flex-direction: column;
+        
+    }
+    .col, .illustration{
+        justify-content: center;
+        width: 100%;
+    }
+
+    #about-content, #portrait img, .social{
+        margin: 2em 0em 0em 0em;
+    }
+
+    .social ul li{
+        display: inline;
+        margin: 0.4em ;
+    }
+
+    .social-link{
+        font-size: 2.4em;
+    }
+
+    .card{
+        margin:2em 0em 1em 0em;
+    }
+
+    #experience-content, #projects-content, #services-content, #certifications-content{
+        margin: 2em 0em 0em 0em;
+    }
+
+    .card-header{
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .period{
+        margin: 1em 0em 0em 0em;
+        
+    }
+    
+    .service{
+        max-width:100%;
+    }
+}

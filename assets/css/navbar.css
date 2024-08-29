@@ -1,0 +1,221 @@
+/* 
+----------------------------------------------
+Navbar 
+---------------------------------------------- 
+*/
+@import url('/assets/css/keyframes.css');
+@import url('colors.css');
+navbar{
+    box-shadow:0px 2px 8px -0.1px var(--color-secondary);
+    animation:fade-down 0.5s;
+    top:0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background:var(--color-background);
+    transition: 0.5s;
+  }
+  
+  #logo{
+    padding: 0;
+  }
+
+  .navbar{
+    display:flex;
+    justify-content:space-around;
+    background-color:var(--color-background); 
+  }
+  
+  a{
+    text-decoration: none;
+  }
+           
+  button{
+    background:none; 
+    border-style:none; 
+    cursor:pointer;
+  }
+    
+  
+  .logo-btn{ 
+     font-size:calc(1.2rem + 0.1vw); 
+    /* font-size: 1.4em; */
+  }
+  
+  #first-name{
+    color:var(--color-primary);
+    transition: 0.5s;
+  }
+  
+  #last-name{
+    color:var(--color-secondary);
+    font-weight:bold;
+    transition: 0.5s;
+  }
+  
+  .links{
+    margin: 0.1em;
+  }
+  
+  .list{
+    display:flex; 
+  }
+    
+  .list li{
+    list-style-type:none;
+    margin:0.7em;
+  }
+  
+  .btn{
+    font-size:calc(0.9em + 0.1vw); 
+    margin-top:0.5em;
+    color:var(--color-secondary);
+  }
+  
+  /* Efecto hover*/
+  .btn:after{
+    content:"";
+    display:block;
+    margin:auto;
+    height:0.15em;
+    width:0em;
+    transition:all .5s;
+    border-radius:3.13em;
+  }
+  
+  .btn:hover:after{
+    width:100%;
+    background:var(--color-secondary);
+  }
+  
+  
+  /* Estilos para el menú dropdown */
+  .dropdown {
+    position: relative;
+    width: 6em;
+  }
+  
+  
+  .dropdown a:hover:after{
+    background: none;/*Elimina la transición debajo de línea al hacer hover*/
+  
+  }
+  
+  
+  .sun, .moon{
+    margin:0.2em; 
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+  }
+  
+  .sun img, .moon img{
+    width:100%;
+  }
+  
+  .moon{
+    opacity:0;  
+  }
+  
+  .toggle, .toggle-btn{  
+    display: flex;
+    justify-content: center;
+    /* z-index: 2000; */
+  }
+  
+  .toggle-btn{   
+    border-radius:4em;
+    background:var(--color-toggle-light);
+    cursor:pointer;
+    width:3em;
+    height:auto;
+    transition: 0.5s;
+  }
+  
+  
+  @media(max-width: 600px){
+  
+    .navbar{
+      flex-direction:column; 
+    }
+    
+    .logo {
+      margin:1em;
+      display:flex;
+      justify-content:space-between;
+    }
+  
+    .logo-btn{
+        /* font-size: 1em; */
+    }
+    
+    .hamburger .line{
+      border-radius:1em;
+      width:2em;
+      height:0.3em;
+      background:var(--color-primary);
+      margin:0.3em 0;
+      
+      /*Agregar duración de animación a icono de menu*/
+      transition:0.4s;
+    }
+    
+    .hamburger .mid-line{
+      width:1em;
+      margin-left:auto;
+      margin-right:0;
+      
+    }
+    
+    /*Animación de barra de menú*/
+    .change .line:nth-child(1){
+        transform:rotate(-45deg) translate(-0.3em,0.4em);
+    }
+  
+    .change .line:nth-child(2){
+      opacity:0;
+    }
+    
+    .change .line:nth-child(3){
+      transform:rotate(45deg) translate(-0.3em,-0.4em);
+    }
+    
+    .links{
+      width:fit-content;
+      display:inline-block; 
+      position:relative;
+      top:50%;
+      transform:translateY(-50%);
+    } 
+    
+    .links li{
+      margin:1.5em;
+    }
+    
+    .btn{
+      color:var(--color-background);
+    }
+    .menu-container{
+      position:fixed;
+      text-align: center;
+      top:0;
+      left:-18em;
+      height:100%;
+      width:18em;
+      background-color:var(--dark-primary);
+      opacity:96%;
+      z-index:1;
+      overflow-x:hidden;
+      transition:0.5s;
+      
+    }
+    .menu-container.show{
+      left:0;
+    }
+  }
+  
+  /* 
+  ----------------------------------------------
+  Navbar 
+  ---------------------------------------------- 
+  */

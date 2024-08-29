@@ -1,0 +1,94 @@
+/*KEYFRAMES*/
+/*Animación de carga de página*/
+@keyframes fade-up {
+    0%{
+      opacity: 0%;
+      transform: translateY(30px) scale(0.9); 
+    }
+  
+    100%{
+      opacity: 1;
+      transform: translateY(0px) scale(1);
+    }
+  } 
+  
+  @keyframes fade-down {
+    0%{
+      opacity: 0%;
+      transform: translateY(-30px) scale(0.9);
+  
+    }
+  
+    100%{
+      opacity: 1;
+      transform: translateY(0px) scale(1);
+    }
+  } 
+  
+  /*Animación de fondo en movimiento*/
+  @-webkit-keyframes animatedbga {
+    
+    0%{
+      background-position: 0% 50%;
+    }
+    
+    50%{
+      background-position:100% 50% ;
+    }
+    
+    100%{
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes animatedbga{
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes animatedbg {
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+  }
+
+
+  /*Animación para abrir el modal*/
+@keyframes modalOpen{
+  0%{
+    transform:scale(0.3);
+    opacity:0;
+  }
+  50%{
+    transform:scale(1.1);
+  }
+  100%{
+    transform:scale(1);
+    opacity:1;
+  }
+}
+
+/*Animación para cerrar el modal*/
+@keyframes modalClose{
+  0%{
+    transform:scale(1);
+    opacity:1;
+  }
+  100%{
+    transform:scale(0.5);
+    opacity:0;
+  }
+}

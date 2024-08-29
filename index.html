@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/darkmode.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+    <!--    Navbar    -->
+        <navbar class="navbar" id="navbar">
+            <div class="logo list">
+                    <ul class="list" id="logo">
+                    <li>
+                        <button class="logo-btn" onclick="location.href='#'"> 
+                            <span id="first-name">< Braulio</span> <span id="last-name">Valle /></span>
+                        </button>
+                    </li>  
+                    </ul>  
+                <div class="hamburger">
+                    <div class="line first-line"></div>
+                    <div class="line mid-line"></div>
+                    <div class="line third-line"></div>
+                </div>   
+            </div> 
+            <div class="menu-container" id="menu-container">
+                <ul class="list links" id="links">
+                <li>
+                    <a class="btn hide" href="#-about" id="about-link">Acerca de</a>
+                </li>
+                <li>
+                    <a class="btn hide" href="#-experience">Experiencia</a>
+                </li>
+                <li>
+                    <a class="btn hide" href="#-projects">Proyectos</a>
+                </li>
+                <li>
+                    <a class="btn hide" href="#-services">Servicios</a>
+                </li>
+                <li>
+                    <a class="btn hide" href="#-courses">Otros</a>
+                </li>
+                <li>
+                    <a class="btn hide" href="#-contact">Contacto</a>
+                </li>
+                <!-- Toggle-->
+                <li>
+                    <div class="toggle">
+                    <div class="toggle-btn" id="toggle-btn">
+                        <div class="sun" id="sun">
+                            <img src="/assets/img/sun.png" alt="" id="btnImg">
+                        </div>
+                        <div class="moon" id="moon">
+                            <img src="/assets/img/moon.png" alt="" id="btnImg">
+                        </div>
+                    </div>
+                    </div>
+                </li>
+                <!-- Toggle-->
+                </ul>
+            </div>
+        </navbar>
+    <!--    Navbar    -->    
+    </header>
+    
+    <div class="wrapper">
+        <button id="scroll-top">Top</button>
+        <div class="content">
+            <!-- main -->
+            <div class="main">
+                <div class="row">
+                    <div class="col" id="greeting">
+                            <div id="greeting-content">
+                                <p id="hi">
+                                👋🏻Hola!</p> <p id="name">Soy Braulio Valle, desarrollador <br> web</p>
+                            </div>
+                        
+                            <div id="download-cv">
+                                <a href="/assets/cv/CV - Braulio Valle - Ing Ciencias de la Computacion.pdf" id="download-btn" download="">Descargar CV<i class="fa-solid fa-download"></i></a>
+                            </div>
+                    </div>
+                    <div class="col">
+                        <div class="illustration">
+                            <img src="/assets/img/image-Photoroom.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main -->
+            <!-- about -->
+            <div id="-about"></div>
+            <div class="about">
+                <div id="about-title" class="main-title-dark">Sobre mí</div>
+                <div class="row" id="about-content">
+                   <div class="col">
+                        <div id="about-description">
+                            Soy ingeniero en ciencias de la computación con experiencia en soporte técnico, he trabajado en proyectos de desarrollo de aplicaciones web,
+                            ya sea en el área laboral, proyectos de clase o prácticas profesionales donde se hace uso de diferentes tecnologías como ser HTML, 
+                            CSS, Bootstrap, Laravel y MySQL.
+                        </div>
+                   </div>
+                   <div class="col">
+                        <div id="portrait">
+                            <img src="/assets/img/descarga.png" alt="">
+                        </div>
+                   </div>
+                   <div class="col social">
+                        <ul>
+                            <li><a href="https://www.instagram.com/braulio_mvalle/" class="social-link" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                            <li><a href="https://github.com/brauliomv" class="social-link" target="_blank"><i class="fa-brands fa-square-github" target="_blank"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/braulio-valle/" class="social-link" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul> 
+                   </div>
+                </div>
+            </div>
+            <!-- about -->
+            <!-- experience -->
+            <div id="-experience"></div>
+            <div class="experience">
+                <div id="experience-title" class="main-title-dark">Experiencia</div>
+                <div id="experience-content">
+                    <div class="row" >
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="company">Universidad Cristiana Evangélica Nuevo Milenio</div>
+                                    <div class="period" id="current">Ene 2022 - Presente</div>
+                                </div>
+                                <hr>
+                                <div class="card-content">
+                                    <div class="position card-text">Soporte técnico</div>
+                                    <div class="duties card-text">
+                                        <ul>
+                                            <li>- Mantenimiento preventivo/correctivo de equipos informáticos de oficina y laboratorios</li>
+                                            <li>- Brindar asesoría técnica a personal administrativo/docente en el uso de herramientas tecnológicas</li>
+                                            <li>- Asesorar a personal docente/estudiantil en el uso de plataformas digitales de la institución</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="card-footer">
+                                    <div class="skills card-text">
+                                        <ul>
+                                            <li class="skill">Trabajo en equipo</li>
+                                            <li class="skill">Moodle</li>
+                                            <li class="skill">Soporte técnico</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="company">Inversiones Rodriguez</div>
+                                    <div class="period">Oct 2021 - Ene 2022</div>
+                                </div>
+                                <hr>
+                                <div class="card-content">
+                                    <div class="position card-text">Soporte técnico / Desarrollador web</div>
+                                    <div class="duties card-text">
+                                        <ul>
+                                            <li>- Mantenimiento preventido/correctivo de equipos informáticos de oficina</li>
+                                            <li>- Desarrollo e implementación de mejoras/actualizaciones a sistema de facturación de la empresa</li>
+                                            <li>- Asesorar a usuarios finales en el uso del sistema de la empresa</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="card-footer">
+                                    <div class="skills card-text">
+                                        <ul>
+                                            <li class="skill">Desarrollo web</li>
+                                            <li class="skill">PHP</li>
+                                            <li class="skill">MySQL</li>
+                                            <li class="skill">Soporte técnico</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="company">SNE 911</div>
+                                    <div class="period">Ene 2020 - Jun 2020</div>
+                                </div>
+                                <hr>
+                                <div class="card-content">
+                                    <div class="position card-text">Práctica profesional </div>
+                                    <div class="duties card-text">
+                                        <ul>
+                                            <li>- Brindar soporte técnico y asistencia a usuarios </li>
+                                            <li>- Desarrollo de aplicaciones y formularios web bajo normativas de la institución</li>
+                                            <li>- Configuración de servidores</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="card-footer">
+                                    <div class="skills card-text">
+                                        <ul>
+                                            <li class="skill">Desarrollo web</li>
+                                            <li class="skill">Laravel</li>
+                                            <li class="skill">MySQL</li>
+                                            <li class="skill">Bootstrap</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <!-- experience -->
+
+            <!-- projects -->
+            <div id="-projects"></div>
+            <div class="projects">
+                <div id="projects-title" class="main-title-dark">Proyectos</div>
+                
+                <div id="projects-content">
+                    <div class="row">
+                        <div class="col project">
+                            <div class="card">
+                                    <div class="swiper">
+                                        <!-- Additional required wrapper -->
+                                          <div class="swiper-wrapper">
+                                            <!-- Slides -->
+                                            <div class="swiper-slide"><img src="/assets/img/sne911/1.png" alt=""></div>
+                                            <div class="swiper-slide"><img src="/assets/img/sne911/2.png" alt=""></div>
+                                            <div class="swiper-slide"><img src="/assets/img/sne911/3.png" alt=""></div>
+                                            <div class="swiper-slide"><img src="/assets/img/sne911/4.png" alt=""></div>
+                                            <div class="swiper-slide"><img src="/assets/img/sne911/5.png" alt=""></div>
+                                            ...
+                                          </div>
+                                        <!-- If we need pagination -->
+                                          <div class="swiper-pagination"></div>
+                
+                                          <!-- If we need navigation buttons -->
+                                          <div class="swiper-button-prev"></div>
+                                          <div class="swiper-button-next"></div>
+                
+                                          <!-- If we need scrollbar -->
+                                          <div class="swiper-scrollbar"></div>
+                                    </div>
+                                
+                                <hr>
+                                <div class="card-content">
+                                    <div class="position card-text">Plataforma de tickets de soporte técnico</div>
+                                    
+                                    <div class="duties card-text">
+                                        Proyecto desarrollado durante el período de práctica profesional supervisada el cual consistió en la elaboración 
+                                        de una plataforma web para gestión de solicitudes de soporte técnico, las funcionalidades y módulos del sistema se 
+                                        implementaron de acuerdo a las necesidades identificadas y requisitos por parte de la coordinación del departamento
+                                        de IT del SNE 911, las principales funcionalidades del sistema incluyen: <br> CRUDs para cada módulo, autenticación,
+                                        administración de usuarios, envío de correos electrónicos, proceso de gestión de solicitudes, datos estadísticos, reportes,
+                                        respaldo automático de información, etc.
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="card-footer">
+                                    <div class="skills card-text">
+                                        <ul>
+                                            <li class="skill">Laravel</li>
+                                            <li class="skill">MySQL</li>
+                                            <li class="skill">Bootstrap</li>
+                                            <li class="skill">Laravel charts</li>
+                                            <li class="skill">MVC</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col project">
+                            <div class="card">
+                                    <div class="swiper">
+                                        <!-- Additional required wrapper -->
+                                          <div class="swiper-wrapper">
+                                            <!-- Slides -->
+                                            <div class="swiper-slide"><img src="/assets/img/RideRegist/1.png" alt=""></div>
+                                            <div class="swiper-slide"><img src="/assets/img/RideRegist/2.png" alt=""></div>
+                                            <div class="swiper-slide"><img src="/assets/img/RideRegist/3.png" alt=""></div>
+                                            <div class="swiper-slide"><img src="/assets/img/RideRegist/4.png" alt=""></div>
+                                            <div class="swiper-slide"><img src="/assets/img/RideRegist/5.png" alt=""></div>
+                                            <div class="swiper-slide"><img src="/assets/img/RideRegist/6.png" alt=""></div>
+                                            ...
+                                          </div>
+                                        <!-- If we need pagination -->
+                                          <div class="swiper-pagination"></div>
+                
+                                          <!-- If we need navigation buttons -->
+                                          <div class="swiper-button-prev"></div>
+                                          <div class="swiper-button-next"></div>
+                
+                                          <!-- If we need scrollbar -->
+                                          <div class="swiper-scrollbar"></div>
+                                    </div>
+                                <hr>
+                                <div class="card-content">
+                                    <div class="position card-text">Sistema para registro de viajes</div>
+                                    <div class="duties card-text">
+                                        Sistema desarrollado con la finalidad de registrar los viajes en los cuales los colaboradores de una institución
+                                        son transportados por una empresa externa, esto con la finalidad de identificar los trabajadores que utilizan el servicio
+                                        y saber la cantidad que se pagará a los transportistas por los viajes realizados durante la semana. Es posible registrar sucursales,
+                                        asignar colaboradores(un colaborador puede ser asignado a varias sucursales) y administrar las distancias desde la sucursal asignada hasta
+                                        sus destinos.
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="card-footer">
+                                    <div class="skills card-text">
+                                        <ul>
+                                            <li class="skill">Desarrollo web</li>
+                                            <li class="skill">Laravel</li>
+                                            <li class="skill">MySQL</li>
+                                            <li class="skill">Bootstrap</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col project">
+                            <div class="card">
+                                <div class="swiper">
+                                    <!-- Additional required wrapper -->
+                                      <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide"><img src="/assets/img/rrss/1.png" alt=""></div>
+                                        <div class="swiper-slide"><img src="/assets/img/rrss/2.png" alt=""></div>
+                                        <div class="swiper-slide"><img src="/assets/img/rrss/3.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="/assets/img/rrss/4.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="/assets/img/rrss/5.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="/assets/img/rrss/6.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img src="/assets/img/rrss/7.jpg" alt=""></div>
+                                        ...
+                                      </div>
+                                    <!-- If we need pagination -->
+                                      <div class="swiper-pagination"></div>
+            
+                                      <!-- If we need navigation buttons -->
+                                      <div class="swiper-button-prev"></div>
+                                      <div class="swiper-button-next"></div>
+            
+                                      <!-- If we need scrollbar -->
+                                      <div class="swiper-scrollbar"></div>
+                                </div>
+                            
+                            <hr>
+                            <div class="card-content">
+                                <div class="position card-text">Diseños de logos y publicaciones para redes sociales</div>
+                                
+                                <div class="duties card-text">
+                                    Creación de logos y diseños de publicaciones para redes sociales de clínica dental
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="card-footer">
+                                <div class="skills card-text">
+                                    <ul>
+                                        <li class="skill">Adobe Illustrator</li>
+                                        <li class="skill">Diseño</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+    
+                        <div class="col project">
+                            <div class="card">
+                                <div class="swiper">
+                                    <!-- Additional required wrapper -->
+                                      <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide"><img src="/assets/img/rrss/8.jpg" alt=""></div>
+                                        ...
+                                      </div>
+                                    <!-- If we need pagination -->
+                                      <div class="swiper-pagination"></div>
+            
+                                      <!-- If we need navigation buttons -->
+                                      <div class="swiper-button-prev"></div>
+                                      <div class="swiper-button-next"></div>
+            
+                                      <!-- If we need scrollbar -->
+                                      <div class="swiper-scrollbar"></div>
+                                </div>
+                            <hr>
+                            <div class="card-content">
+                                <div class="position card-text">Diseños de logo para organización de caja rural</div>
+                                
+                                <div class="duties card-text">
+                                    Creación de logo para organización de caja rural de la aldea de Los Planes, en el municipio de San Jorge, Ocotepeque
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="card-footer">
+                                <div class="skills card-text">
+                                    <ul>
+                                        <li class="skill">Adobe Illustrator</li>
+                                        <li class="skill">Diseño</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col project">
+                            <div class="card">
+                                <div class="swiper">
+                                    <!-- Additional required wrapper -->
+                                      <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide"><img src="/assets/img/appsne/1.png" alt=""></div>
+                                        <div class="swiper-slide"><img src="/assets/img/appsne/2.png" alt=""></div>
+                                        <div class="swiper-slide"><img src="/assets/img/appsne/3.png" alt=""></div>
+                                        <div class="swiper-slide"><img src="/assets/img/appsne/4.png" alt=""></div>
+                                        ...
+                                      </div>
+                                    <!-- If we need pagination -->
+                                      <div class="swiper-pagination"></div>
+            
+                                      <!-- If we need navigation buttons -->
+                                      <div class="swiper-button-prev"></div>
+                                      <div class="swiper-button-next"></div>
+            
+                                      <!-- If we need scrollbar -->
+                                      <div class="swiper-scrollbar"></div>
+                                </div>
+                            
+                            <hr>
+                            <div class="card-content">
+                                <div class="position card-text">Aplicación móvil para institución gubernamental</div>
+                                
+                                <div class="duties card-text">
+                                    Desarrollo de aplicación móvil para institución gubernamental. Este proyecto fue un aporte de clase para el SNE 911, el objetivo
+                                    principal es el envío de alertas o notificación de emergencias por parte de los usuarios, para ello se selecciona el tipo de emergencia que se está 
+                                    presentando y además se puede adjuntar una imagen, esta información es verificada desde una plataforma de administración.
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="card-footer">
+                                <div class="skills card-text">
+                                    <ul>
+                                        <li class="skill">React Native</li>
+                                        <li class="skill">PHP</li>
+                                        <li class="skill">MySQL</li>
+                                        <li class="skill">Firebase</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+    
+                        <div class="col project">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- projects -->
+
+            <!-- services -->
+            <div id="-services"></div>
+            <div class="services">
+                <div id="services-title" class="main-title-dark">Servicios</div>
+                <div id="services-content" class="services-content">
+                    <div class="row">
+                        <div class="service">
+                            <div class="service-title service-item">Desarrollo web</div>
+                            <div class="service-image service-item"> <img src="/assets/img/services/web.jpg" alt=""> </div>
+                            <div class="service-description service-item">Creación de aplicaciones web que brinden soluciones eficientes e innovadoras para negocios</div>
+                        </div>
+                        <div class="service">
+                            <div class="service-title service-item">Soporte técnico</div>
+                            <div class="service-image service-item"> <img src="/assets/img/services/computermaintenance3.jpg" alt=""> </div>
+                            <div class="service-description service-item">Diagnóstico y mantenimiento profesional de PCs, incluyendo detección de problemas, limpieza de hardware, actualizaciones de software y optimización del rendimiento</div>
+                        </div>
+                        <div class="service">
+                            <div class="service-title service-item">Diseño</div>
+                            <div class="service-image service-item"> <img src="/assets/img/services/support.jpg" alt=""> </div>
+                            <div class="service-description service-item">Diseño de logos para negocios y publicaciones para redes sociales, con el objetivo de garantizar que cada proyecto refleje fielmente la identidad y objetivos de la marca</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- services -->
+            <!-- certifications -->
+            <div id="-courses"></div>
+            <div class="services">
+                <div id="services-title" class="main-title-dark">Cursos y certificaciones</div>
+                <div id="services-content" class="certifications-content">
+                    <div class="row">
+                        <div class="service">
+                            <div class="service-title service-item">Redes computacionales</div>
+                            <div class="certification-image service-item"> <img src="/assets/img/certificates/computer_networks.png" alt=""> </div>
+                            <div class="service-description service-item">Creación de aplicaciones web que brinden soluciones eficientes para negocios</div>
+                        </div>
+                        <div class="service">
+                            <div class="service-title service-item">Laravel</div>
+                            <div class="certification-image service-item"> <img src="/assets/img/certificates/laravel.png" alt=""> </div>
+                            <div class="service-description service-item">Creación de aplicaciones web que brinden soluciones eficientes para negocios</div>
+                        </div>
+                        <div class="service">
+                            <div class="service-title service-item">SQL</div>
+                            <div class="certification-image service-item"> <img src="/assets/img/certificates/sql.png" alt=""> </div>
+                            <div class="service-description service-item">Creación de aplicaciones web que brinden soluciones eficientes para negocios</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- certifications -->
+
+            <!-- contact -->
+            <div id="-contact"></div>
+            <div class="contact">
+                <div class="contact-content">
+                    <div class="contact-title main-title-dark" >Contáctame</div>
+                    <div class="contact-items">
+                     <p> <i class="fa-solid fa-envelope"></i> <a href="mailto:braulio.valle98@gmail.com"> braulio.valle98@gmail.com</a> </p>   
+                    </div>
+                </div>
+            </div>
+            <!-- contact -->
+        </div>
+    </div> 
+    <!-- footer -->
+    <footer>
+        <div class="footer">Braulio Valle © 2024</div>
+    </footer>
+    <!-- footer -->
+    <script src="assets/js/navbar.js"></script>
+    <script src="/assets/js/darkmode.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <!-- <script src="assets/js/scroll.js"></script> -->
+    <script src="https://kit.fontawesome.com/294d9e7e87.js" crossorigin="anonymous"></script>
+</body>
+</html>
