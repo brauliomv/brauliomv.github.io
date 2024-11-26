@@ -42,10 +42,25 @@
     color: var(--hi-dark-pale);
 }
 
-
+.text-content.dark{
+    color: var(--color-text-pale);
+}
 
 .card.dark{
     background: var(--box-shadow-color-dark);
+}
+
+#current.dark{
+    background: var(--color-secondary);
+    color: var(--dark-primary);
+
+    /* background: var(--dark-primary);
+    color: var(--color-secondary); */
+}
+
+.skill.dark{
+    background: var(--color-secondary);
+    color: var(--dark-primary);
 }
 
 .service-title.dark{

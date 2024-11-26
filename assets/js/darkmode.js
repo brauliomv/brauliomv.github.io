@@ -11,8 +11,11 @@ let lastName = document.getElementById('last-name');
 let hi = document.getElementById('hi');
 let socialLinks = document.querySelectorAll('.social-link');
 let aboutDescription = document.getElementById('about-description');
+let textContents = document.querySelectorAll('.text-content');
 let cardsText = document.querySelectorAll('.card-text');
 let cards = document.querySelectorAll('.card');
+let currentPeriod = document.getElementById('current');
+let skills = document.querySelectorAll('.skill');
 let serviceTitles = document.querySelectorAll('.service-title');
 let servicesContent = document.querySelectorAll('.services-content');
 let certificationsContent = document.querySelectorAll('.certifications-content');
@@ -43,12 +46,22 @@ function setDarkMode(){
 
     aboutDescription.classList.add('dark');
 
+    textContents.forEach(function(textContent){
+        textContent.classList.add('dark');
+    });
+
     cardsText.forEach(function(cardText){
         cardText.classList.add('dark');
     });
 
+    currentPeriod.classList.add('dark');
+
     cards.forEach(function(card){
         card.classList.add('dark');
+    });
+
+    skills.forEach(function(skill){
+        skill.classList.add('dark');
     });
 
     serviceTitles.forEach(function(serviceTitle){
@@ -96,8 +109,18 @@ function setLightMode(){
         cardText.classList.remove('dark');
     });
 
+    textContents.forEach(function(textContent){
+        textContent.classList.remove('dark');
+    });
+
+    currentPeriod.classList.remove('dark');
+
     cards.forEach(function(card){
         card.classList.remove('dark');
+    });
+
+    skills.forEach(function(skill){
+        skill.classList.remove('dark');
     });
 
     serviceTitles.forEach(function(serviceTitle){
