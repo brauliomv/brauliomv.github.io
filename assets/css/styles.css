@@ -388,6 +388,10 @@ hr{
         width: 100%;
     }
 
+    .illustration{
+        margin-top: 3em;
+    }
+
     #about-content, #portrait img, .social{
         margin: 2em 0em 0em 0em;
     }
